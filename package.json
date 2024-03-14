@@ -26,7 +26,8 @@
     "start": "tsc -w",
     "build": "tsc",
     "size": "minify ./dist/codejar.js --sourceType module | gzip-size",
-    "release": "release-it"
+    "release": "release-it",
+    "prepare": "npm run build"
   },
   "devDependencies": {
     "babel-minify": "^0.5.2",
